@@ -1,0 +1,13 @@
+# Lê a idade e o sexo da pessoa
+idade = int(input("Digite a idade da pessoa: "))
+sexo = input("Digite o sexo da pessoa (M ou F): ")
+
+# Verifica a idade e o sexo e imprime uma mensagem personalizada
+if sexo == 'F' and idade < 25:
+    print("Você é uma jovem mulher.")
+elif sexo == 'F' and idade >= 25:
+    print("Você é uma mulher adulta.")
+elif sexo == 'M' and idade < 25:
+    print("Você é um jovem homem.")
+else:
+    print("Opção inválida.")
