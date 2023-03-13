@@ -1,0 +1,11 @@
+# Lê o nome e a idade da pessoa
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+
+# Verifica a idade e imprime uma mensagem personalizada
+if idade < 18:
+    print("Olá", nome + ", você é menor de idade.")
+elif idade >= 18 and idade <= 65:
+    print("Olá", nome + ", você é adulto.")
+else:
+    print("Olá", nome + ", você é idoso.")
