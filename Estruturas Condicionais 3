@@ -1,0 +1,10 @@
+# Lê a nota do aluno
+nota = float(input("Digite a nota do aluno: "))
+
+# Verifica a nota e imprime a mensagem correspondente
+if nota >= 7:
+    print("Aprovado")
+elif nota < 5:
+    print("Reprovado")
+else:
+    print("Recuperação")
