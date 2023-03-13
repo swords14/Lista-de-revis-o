@@ -1,0 +1,16 @@
+# Lê a lista de números do usuário
+numeros = input("Digite uma lista de números inteiros separados por espaço: ").split()
+
+# Converte os números para inteiros
+numeros = [int(numero) for numero in numeros]
+
+# Cria uma nova lista para armazenar os números sem duplicatas
+numeros_sem_duplicatas = []
+
+# Percorre a lista de números e adiciona cada número não duplicado à lista sem duplicatas
+for numero in numeros:
+    if numero not in numeros_sem_duplicatas:
+        numeros_sem_duplicatas.append(numero)
+
+# Imprime a lista sem duplicatas
+print("A lista sem valores duplicados é:", numeros_sem_duplicatas)
