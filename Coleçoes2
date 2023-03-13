@@ -1,0 +1,16 @@
+# Lê a lista de nomes do usuário
+nomes = input("Digite uma lista de nomes separados por espaço: ").split()
+
+# Cria um dicionário vazio para armazenar a contagem de nomes
+contagem_nomes = {}
+
+# Percorre a lista de nomes e atualiza a contagem no dicionário
+for nome in nomes:
+    if nome in contagem_nomes:
+        contagem_nomes[nome] += 1
+    else:
+        contagem_nomes[nome] = 1
+
+# Imprime o dicionário com a contagem de nomes
+for nome, contagem in contagem_nomes.items():
+    print(nome, "aparece", contagem, "vezes na lista.")
