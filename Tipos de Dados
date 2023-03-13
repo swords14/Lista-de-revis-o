@@ -1,0 +1,9 @@
+
+num = int(input("Digite um numero inteiro: "))
+#Solicita um número inteiro ao usuario
+
+#Calcula o dobro desse numero
+dobro = num * 2
+
+#Imprime o resultado
+print("O doro de", num, "é", dobro)
